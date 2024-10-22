@@ -1,4 +1,5 @@
-This is Power BI and Excel Data Analytics Projects 
+![image](https://github.com/user-attachments/assets/204a1893-c036-4443-96c4-49a8a2796bb5)
+
 
 ![image](https://github.com/user-attachments/assets/4b40c53a-9e44-4c6c-8ddf-a71f1aa89f18)
 
