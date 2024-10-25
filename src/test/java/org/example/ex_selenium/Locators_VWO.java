@@ -1,4 +1,4 @@
-package org.example.JavaPrograms;
+package org.example.ex_selenium;
 
 
 import org.openqa.selenium.By;
