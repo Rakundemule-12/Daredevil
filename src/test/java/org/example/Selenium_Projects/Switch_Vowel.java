@@ -1,4 +1,4 @@
-package org.example.JavaPrograms;
+package org.example.Selenium_Projects;
 
 import java.util.Scanner;
 
