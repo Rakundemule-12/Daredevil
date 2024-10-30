@@ -1,4 +1,4 @@
-package org.example.ex_selenium;
+package org.example.Selenium_Projects;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
