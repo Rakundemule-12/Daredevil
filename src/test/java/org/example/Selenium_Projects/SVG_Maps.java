@@ -31,10 +31,9 @@ public class SVG_Maps {
 
     @Description("Verify that the tripura is in india and click on it.")
     @Test
-    public void test_svg_india_search_click()
-    {
+    public void test_svg_india_search_click() throws InterruptedException {
 
-        driver.manage().window().maximize();
+
         String URL = "https://www.amcharts.com/svg-maps/?map=india";
         driver.get(URL);
         driver.manage().window().maximize();
@@ -44,10 +43,14 @@ public class SVG_Maps {
 
         List<WebElement> states = driver.findElements
                 (By.xpath("//*[local-name()='svg']/*[local-name()='g'][7]/*[local-name()='g']/*[local-name()='g']/*[local-name()='path']"));
+
+
         for (WebElement state : states) {
             System.out.println(state.getAttribute("aria-label"));
-            if (state.getAttribute("aria-label").contains("Tripura")) {
+            if (state.getAttribute("aria-label").contains("Delhi")) {
                 wait.until(ExpectedConditions.elementToBeClickable(state)).click();
+                Thread.sleep(30000);
+
             }
 
         }

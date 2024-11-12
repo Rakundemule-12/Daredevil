@@ -39,7 +39,7 @@ public class Shadow_DOM
         WebElement div_to_scroll = driver.findElement(By.xpath("//div[@id='userName']"));
         js.executeScript("arguments[0].scrollIntoView(true);",div_to_scroll);
 
-        Thread.sleep(3000);
+        Thread.sleep(30000);
 
         WebElement inputboxPizza = (WebElement) js.executeScript("return document.querySelector(\"div#userName\").shadowRoot.querySelector(\"div#app2\").shadowRoot.querySelector(\"#pizza\");");
         inputboxPizza.sendKeys("farmhouse");
