@@ -92,6 +92,7 @@ public class Automate_opencart {
         WebElement created = driver.findElement(By.id("content"));
         String actualText = created.getText();
         Assert.assertTrue(actualText.contains("Your Account Has Been Created!"));
+//        Assert.assertEquals(actualText,"Your Account Has Been Created!");
 
 
     }

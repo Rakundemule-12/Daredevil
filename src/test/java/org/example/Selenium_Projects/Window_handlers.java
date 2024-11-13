@@ -59,7 +59,7 @@ public class Window_handlers {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.quit();
+
     }
 }
 
