@@ -6,6 +6,7 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -68,5 +69,18 @@ public class Orange_HRM {
         WebElement btn_clik = chromeDriver.findElement(By.xpath("//div[@class='oxd-table-body']/div[1]/div/div[9]/div/button[1]"));
         btn_clik.click();
 
+
     }
+
+
+    @AfterTest
+    public void close_Browser()
+     {
+         try {
+             Thread.sleep(3000);
+         } catch (InterruptedException e) {
+             throw new RuntimeException(e);
+         }
+     }
+
 }
